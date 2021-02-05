@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{stfloats}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\usepackage{mathtools}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\title{STAT3003 Problem Sheet 1}
+\author{ZHENG Weijia (William, 1155124322)}
+\date{\today}
+\maketitle
+
+
+
+\section{Q1}
+
+We want to prove $E[\hat{\sigma}^2]=\frac{N}{N-1}\sigma^2.$
+
+Note that $\sigma^2=\frac{1}{N}\sum_{j=1}^{N}(u_j-\mu)=\frac{1}{N^2}[(N-1)\sum_{j=1}^{N}u_j^2-\sum_{j=1}^{N}\sum_{k\neq j}u_ju_k]$
+
+Hence R.H.S.=$\frac{N}{N-1}\sigma^2=\frac{1}{N(N-1)}[\sum_{j=1}^{N}\sum_{k\neq j}u_j^2-\sum_{j=1}^{N}\sum_{k\neq j}u_ju_k].$
+
+Also note that $\hat{\sigma}^2=\frac{1}{n-1}\sum_{i=1}^{n}(Y_i-\bar{Y})^2=\frac{1}{n(n-1)}[(n-1)\sum_{i=1}^{n}Y_i^2-\sum_{j=1}^{n}\sum_{k\neq j}Y_jY_k]$
+
+$=\frac{1}{n(n-1)}[(n-1)\sum_{i=1}^{n}u_i^2Z_i^2-\sum_{j=1}^{n}\sum_{k\neq j}u_ju_kZ_jZ_k].$
+
+Hence L.H.S.=$E[\hat{\sigma}^2]=\frac{1}{n}\sum_{i=1}^{n}u_i^2E[Z_i^2]-\frac{1}{n(n-1)}\sum_{j=1}^{n}\sum_{k\neq j}u_ju_kE[Z_jZ_k]$
+
+$=\frac{1}{n}\sum_{i=1}^{n}u_i^2E[Z_i^2]-\frac{1}{n(n-1)}\sum_{j=1}^{n}\sum_{k\neq j}u_ju_kE[Z_jZ_k]$
+
+$=\frac{1}{n}\sum_{i=1}^{n}u_i^2\frac{n}{N}-\frac{1}{n(n-1)}\sum_{j=1}^{n}\sum_{k\neq j}u_ju_k\frac{n(n-1)}{N(N-1)}$
+
+$=\frac{1}{N}\sum_{i=1}^{n}u_i^2-\sum_{j=1}^{n}\sum_{k\neq j}u_ju_k\frac{1}{N(N-1)}=\frac{1}{N(N-1)}[\sum_{j=1}^{N}\sum_{k\neq j}u_j^2-\sum_{j=1}^{N}\sum_{k\neq j}u_ju_k]$=R.H.S..
+
+Q.E.D.
+
+~\ 
+
+\section{Q2}
+
+
+
+
+\end{document}
