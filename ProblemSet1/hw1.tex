@@ -125,7 +125,11 @@ Hence the interval should be $$(33750\pm \sqrt{1500^2(1-\frac{100}{1500})\frac{1
 
 Note that we have a pre-sample estimate for $\sigma$, which is $\sqrt{s^2}=11.66.$
 
-Hence the proper sample size can be $$n=\frac{1}{\frac{1}{1500}+\frac{1500^2}{1500^2s^2z_{1-\frac{\alpha}{2}}^2}(1-\frac{1}{1500})}=563.4235.$$ 
+Hence the proper sample size can be $$n=\frac{1}{\frac{1}{1500}+\frac{1500^2}{1500^2s^2t_{n-1,1-\frac{\alpha}{2}}^2}}.$$
+
+Consult the table we found that when $n=565,$ R.H.S.=565.8022 and when $n=566,$ R.H.S.=565.7979, hence we choose n=566.
+
+
 
 ~\ 
 
