@@ -141,8 +141,37 @@ Done.
 
 
 \section{Q6}
+Using the formulae $\hat{\tau}=N\frac{1}{n} \sum_{i=1}^{n}\hat{Y_i}$ and $\hat{Y_i}=\frac{M_i}{m_i}\sum_{j=1}^{m_i}Y_{ij}.$ 
+
+We have the numbers of $N=300, n=4, m_i=3,~ \forall i=1,2,3.$
+
+$M_1 = 18, M_2 = 12, M_3 = 9, M_4 = 14.$
+
+Hence $\hat{Y_1} = 18, \hat{Y_2} = 12, \hat{Y_3} = 12, \hat{Y_4} = \frac{28}{3}.$
+
+Therefore $$\hat{\tau} = \frac{300}{4}(18+12+12+\frac{28}{3})=3850.$$ 
+
+And then we need to find $\sqrt{\hat{Var}(\hat{\tau})}.$
+
+Using formulae $\hat{Var}(\hat{\tau})=N(N-n)\frac{1}{n}\hat{\sigma_c^2} + \frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i^2},$ we can have $$\hat{Var}(\hat{\tau})=234904.815.$$
+
+Then we have $\sqrt{\hat{Var}(\hat{\tau})}=484.6698.$
+
+Hence the standard error is 484.6698.
 
 
+
+
+\section{Q7}
+It should be obvious. Note that $\hat{b}$ (stands for number of retired people per block) = $\frac{\hat{\tau}}{N}.$ 
+
+Then, $$\hat{b} = \frac{\hat{\tau}}{N} = \frac{3850}{300}=12.8333.$$
+
+And the estimated variance should be $$\hat{Var}(\hat{b})=\hat{Var}( \frac{\hat{\tau}}{N} )= \frac{1}{N^2} \hat{Var}(\hat{\tau}) = \frac{1}{90000}*234904.815 = 2.61.$$
+
+Hence the standard error should be $\sqrt{2.61}=1.6156.$
+
+Done.
 
 
 \end{document}
