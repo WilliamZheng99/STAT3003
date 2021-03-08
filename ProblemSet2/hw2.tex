@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}%
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{stfloats}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\usepackage{mathtools}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\title{STAT3003 Problem Sheet 1}
+\author{ZHENG Weijia (William, 1155124322)}
+\date{\today}
+\maketitle
+
+
+
+\section{Q1}
+
+Note that $L=4$, $N=N_1+N_2+N_3+N_4 = 225,$ with $N_1=64, N_2=43, N_3 = 92, N_4=26.$ And $\hat{p_1}=\frac{2}{7}, \hat{p_2}=\frac{1}{3}, \hat{p_3}=\frac{8}{21}, \hat{p_4}=\frac{1}{3}.$
+
+Hence we can have the $$\hat{p_{st}}=\frac{1}{N}\sum_{i=1}^{L}N_i \hat{p_i}=0.3393.$$
+
+Also, by $$\hat{Var}(\hat{p_{st}})=\frac{1}{N^2}\sum_{i=1}^{L}N_i^2(1-\frac{n_i}{N_i})\frac{1}{n_i-1}\hat{p_i}(1-\hat{p_i})=\frac{197.979}{225^2}=3.7724*10^{-3}.$$
+
+Therefore, $\sqrt{\hat{Var}(\hat{p_{st}})}=0.0614.$
+
+Our goal is to find $$(~\hat{p_{st}} \pm t_{df,1-\frac{\alpha}{2}}*\sqrt{\hat{Var}(\hat{p_{st}})}~~).$$
+
+By Satterthwaite's Approximation, we have $$df \approx \frac{(\sum_{i=1}^{L}k_i s_{i}^2)^2}{\sum_{i=1}^{L}\frac{(k_i s_i^2)^2}{n_i-1}}, k_i=\frac{N_i(N_i-n_i)}{N^2n_i},$$ and hence $df=45.$
+
+Then $t_{df,1-\frac{\alpha}{2}}=t_{45,0.975}=2.0141.$ Therefore, then result should be $$(~0.3393\pm 2.0141*0.0614~)$$
+
+Done.
+
+~\ 
+
+\end{document}
+
+\section{Q2}
