@@ -113,6 +113,22 @@ And therefore, $$n_j=\frac{c-c_0}{\sum_{j=1}^{L}\sqrt{\frac{N_j}{N_j -1}} \frac{
 Done.
 
 \section{Q4}
+By the formulae $\hat{\mu} = \frac{\hat{\tau}}{M},$ we can investigate the $\hat{\tau}$ and then go from $\hat{\tau}$ to get $\hat{\mu}.$
+
+Note that $M=3500, N=108, n=25.$ 
+
+Note that $$\hat{\tau}=N\frac{1}{n}\sum_{i=1}^{n}Y_i=151014.24.$$
+
+And $$t_{n-1,1-\frac{\alpha}{2}}=t_{24,0.975}=2.06.$$
+
+Also, we have $$\hat{Var}(\hat{\tau})=\hat{Var}(N\bar{Y})=N^2(1-\frac{n}{N})\frac{\hat{\sigma_c}^2}{n}.$$
+
+Where the $\hat{\sigma_c}^2$ is the sample variance of cluster totals. Hence $\hat{\sigma_c}^2=149422.2016.$ And $$\hat{Var}(\hat{\tau})=53576824.61.$$
+
+Therefore $\sqrt{\hat{Var}(\hat{\tau})}=7319.6192.$ Hence the 95\% CI for $\tau$ is $$(~151014.24 \pm 2.06*7319.6192~)$$. Therefore 95\% CI for $\mu$ is $(~43,147 \pm 4.3081~).$
+
+
+\section{Q5}
 
 
 
