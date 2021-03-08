@@ -45,7 +45,7 @@
 
 \begin{document}
 
-\title{STAT3003 Problem Sheet 1}
+\title{STAT3003 Problem Sheet 2}
 \author{ZHENG Weijia (William, 1155124322)}
 \date{\today}
 \maketitle
@@ -70,8 +70,51 @@ Then $t_{df,1-\frac{\alpha}{2}}=t_{45,0.975}=2.0141.$ Therefore, then result sho
 
 Done.
 
-~\ 
+\section{Q2}
+Note that $L=3, c = 500, c_0 =0.$
+
+Using $$n_i=\frac{(c-c_0)\frac{N_i S_i}{\sqrt{c_i}}}{\sum_{i=1}^{L}N_i S_i \sqrt{c_i}}.$$ 
+
+Note that we have the $\sigma_i$ are given, hence by $\hat{\sigma_i}^2=\frac{N_i}{N_i-1}\sigma_i^2.$ Then we have $s_i = \hat{\sigma_i}.$ With $s_1=1.5067, s_2 = 1.8134, s_3=1.8235.$
+
+Which gives that $n_1=18.1510, n_2=7.9581, n_3=3.8247.$ By doing rounding, we have $n_1=18, n_2=8, n_3=4.$ Under this case, we have the cost to be $506.$
+
+For saving the cost, we need to reduce the sample size in North America by 1. 
+
+Then we have $n_1=17, n_2=8, n_3=4.$ Under this case, the cost is $497,$ which is okay. 
+
+And by $$Var(\bar{Y_{st}})=\frac{1}{N^2}\sum_{i=1}^{L}N_i^2\frac{\sigma_i^2}{n_i}(\frac{N_i-n_i}{N_i-1})=0.08825<0.1.$$
+
+Which can satisfy the corporation's requirement. Hence they can be happy.
+
+Done. 
+
+\section{Q3}
+Recall that the function we want to optimize is $$f(n_1,n_2,...,n_L)=\frac{1}{N^2}\sum_{i=1}^{L}N_i^2\frac{\sigma_{i}^2}{n_i}(\frac{N_i-n_i}{N_i-1}).$$
+
+And the constraint is $$g(n_1,n_2,...,n_L)=c-(c_0+c_1n_1+...+c_Ln_L)=0.$$
+
+The lagrangian is $$L=f-\lambda g.$$ 
+
+Note that $$\frac{\partial f}{\partial n_j}=\frac{1}{N^2}\frac{\partial (N_j^3\ \sigma_{j}^2)}{n_j (N_j-1)}=-\frac{N_j^3 \sigma_j^2}{N^2 (N_j-1)n_j^2}.$$
+
+And $$\frac{\partial g}{\partial n_j}=-c_j.$$ 
+
+Therefore we can have $$\lambda c_j = \frac{1}{n_j^2}\frac{N_j^3 \sigma_j^2}{N^2(N_j-1)}.$$ 
+
+Which implies $$n_j=\frac{1}{\sqrt{\lambda}} \sqrt{\frac{N_j}{N_j -1}} \frac{N_j \sigma_j}{\sqrt{c_j} N}.$$
+
+Recall the constraint g=0. We can have $$\sum_{j=1}^{L}c_jn_j=(c-c_0)=\sum_{j=1}^{L} \frac{1}{\sqrt{\lambda}} \sqrt{\frac{N_j}{N_j -1}} \frac{N_j \sigma_j}{\sqrt{c_j} N}.$$
+
+Hence $$\frac{1}{\sqrt{\lambda}}=\frac{c-c_0}{\sum_{j=1}^{L}\sqrt{\frac{N_j}{N_j -1}} \frac{N_j \sigma_j}{\sqrt{c_j} N} } .$$
+
+And therefore, $$n_j=\frac{c-c_0}{\sum_{j=1}^{L}\sqrt{\frac{N_j}{N_j -1}} \frac{N_j \sigma_j}{\sqrt{c_j} N} } \sqrt{\frac{N_j}{N_j -1}} \frac{N_j \sigma_j}{\sqrt{c_j} N}=\frac{(c-c_0)(\sqrt{\frac{N_i}{N_i-1}}\frac{N_i \sigma_i}{\sqrt{c_i}})}{\sum_{i=1}^{L} \sqrt{\frac{N_i}{N_i-1}}N_i \sigma_i \sqrt{c_i} }.$$ Which is want we want. 
+
+Done.
+
+\section{Q4}
+
+
+
 
 \end{document}
-
-\section{Q2}
