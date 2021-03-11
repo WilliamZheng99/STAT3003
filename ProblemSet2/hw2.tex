@@ -133,9 +133,9 @@ Note that $\hat{\mu}=\frac{N}{M}\bar{Y}.$ Hence $$Var(\hat{\mu})=Var(\bar{Y})\fr
 
 Hence the width $2d=2t_{n-1,1-\frac{\alpha}{2}}\sqrt{Var(\hat{\mu})} \leq 4.$ Solving this inequality, we then have $$n \geq \frac{1}{\frac{1}{N} + \frac{4(N-1)M^2}{N^3 \sigma_c^2 t_{n-1,1-\frac{\alpha}{2}}^2 } }.$$ 
 
-Now we plug in $M=3500,$ and $\sigma_c^2$ can be used by $149422.2016$ and N be pluged in by $100$. 
+Now we plug in $M=3500,$ and $\sigma_c^2$ can be used by $155648.1267$ and N be pluged in by $100$. 
 
-Then we can see the minimal n such that the above inequality hold is $n=56$.
+Then we can see the minimal n such that the above inequality hold is $n=57$.
 
 Done. 
 
@@ -153,11 +153,13 @@ Therefore $$\hat{\tau} = \frac{300}{4}(18+12+12+\frac{28}{3})=3850.$$
 
 And then we need to find $\sqrt{\hat{Var}(\hat{\tau})}.$
 
-Using formulae $\hat{Var}(\hat{\tau})=N(N-n)\frac{1}{n}\hat{\sigma_c^2} + \frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i^2},$ we can have $$\hat{Var}(\hat{\tau})=234904.815.$$
+Note that $\hat{\sigma_c}^2 = 13.4444$
 
-Then we have $\sqrt{\hat{Var}(\hat{\tau})}=484.6698.$
+Using formulae $\hat{Var}(\hat{\tau})=N(N-n)\frac{1}{n}\hat{\sigma_c^2} + \frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i^2},$ we can have $$\hat{Var}(\hat{\tau})=315050.$$
 
-Hence the standard error is 484.6698.
+Then we have $\sqrt{\hat{Var}(\hat{\tau})}=561.28.$
+
+Hence the standard error is 561.28.
 
 
 
@@ -167,9 +169,9 @@ It should be obvious. Note that $\hat{b}$ (stands for number of retired people p
 
 Then, $$\hat{b} = \frac{\hat{\tau}}{N} = \frac{3850}{300}=12.8333.$$
 
-And the estimated variance should be $$\hat{Var}(\hat{b})=\hat{Var}( \frac{\hat{\tau}}{N} )= \frac{1}{N^2} \hat{Var}(\hat{\tau}) = \frac{1}{90000}*234904.815 = 2.61.$$
+And the estimated variance should be $$\hat{Var}(\hat{b})=\hat{Var}( \frac{\hat{\tau}}{N} )= \frac{1}{N^2} \hat{Var}(\hat{\tau}) = \frac{1}{90000}*315050 = 3.5.$$
 
-Hence the standard error should be $\sqrt{2.61}=1.6156.$
+Hence the standard error should be $\sqrt{3.5}=1.87.$
 
 Done.
 
