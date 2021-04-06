@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1617710229 "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf" "midtermA" 1617710230
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.aux" 1617710230 914 9e56bde0d6db6f390074a4ce69ba9f57 ""
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" 1617710229 5654 b403f1f0ce6463389f81f11e3fcbf210 ""
+["pdflatex"] 1617718527 "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf" "midtermA" 1617718538
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.aux" 1617718528 1279 865ff623f15348116ea7dd5782b08788 ""
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" 1617718536 7130 5a605f5c7137456351a6e67e9386fd79 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -29,8 +29,10 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf" 1136768653 1372 788387fea833ef5963f4c5bffe33eb89 ""
@@ -73,11 +75,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1617683666 2724734 cdc08b019e91c51159b5d6d66da729b3 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "midtermA.aux" 1617710230 914 9e56bde0d6db6f390074a4ce69ba9f57 "pdflatex"
-  "midtermA.tex" 1617710229 5654 b403f1f0ce6463389f81f11e3fcbf210 ""
+  "midtermA.aux" 1617718528 1279 865ff623f15348116ea7dd5782b08788 "pdflatex"
+  "midtermA.tex" 1617718536 7130 5a605f5c7137456351a6e67e9386fd79 ""
   (generated)
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.log"
+  "midtermA.log"
   "midtermA.aux"
   "midtermA.pdf"
   "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf"
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.log"
-  "midtermA.log"
