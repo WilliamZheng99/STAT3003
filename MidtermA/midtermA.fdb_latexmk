@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1617703161 "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf" "midtermA" 1617703163
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.aux" 1617703162 468 f53e42e427351e2982f9c42502fb4de4 ""
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" 1617703161 4439 1ef979721ce5e857f2a6dbdf4f0fc6a3 ""
+["pdflatex"] 1617710229 "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf" "midtermA" 1617710230
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.aux" 1617710230 914 9e56bde0d6db6f390074a4ce69ba9f57 ""
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.tex" 1617710229 5654 b403f1f0ce6463389f81f11e3fcbf210 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -73,11 +73,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1617683666 2724734 cdc08b019e91c51159b5d6d66da729b3 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "midtermA.aux" 1617703162 468 f53e42e427351e2982f9c42502fb4de4 "pdflatex"
-  "midtermA.tex" 1617703161 4439 1ef979721ce5e857f2a6dbdf4f0fc6a3 ""
+  "midtermA.aux" 1617710230 914 9e56bde0d6db6f390074a4ce69ba9f57 "pdflatex"
+  "midtermA.tex" 1617710229 5654 b403f1f0ce6463389f81f11e3fcbf210 ""
   (generated)
-  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.log"
-  "midtermA.pdf"
   "midtermA.aux"
-  "midtermA.log"
+  "midtermA.pdf"
   "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.pdf"
+  "/Users/wangyide/Desktop/STAT3003/MidtermA/midtermA.log"
+  "midtermA.log"
