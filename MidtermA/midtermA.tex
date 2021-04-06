@@ -52,51 +52,59 @@
 \maketitle
 
 \begin{abstract}
-    In this report paper, I suggested to measure the income inequality situation of towns in Islands as a $\tau$-type metric using the way one measuring the entropy of a random variable, instead of using the complex Gini coefficient.
-    By denying the feasibilities of other sampling methods, I suggested to use a cluster sampling with a systematic sampling way to form clusters. Though this approach and the sampling methods remain many flaws, I did a small scale trial sampling and gave the result generated.
+    In this report paper, in order to measure the income inequality of towns in Islands more efficiently, instead of using the complex Gini coefficient,  
+    I suggested to measure it as a $\tau$-type metric by using the way of measuring the entropy of a random variable.
+    By denying the feasibilities of other sampling methods, I suggested to use a cluster sampling with a systematic sampling way to form clusters. 
+    What's more, I did a small scale trial sampling and calculated a proper result. I also noted down some points I hope to make improvement.
 
 \end{abstract}
 
 \section{Introduction and Notations}
-Income inequality continues to receive world-wide attention. The most famous method to measure it to use the Gini Index proposed by Gini. 
-Gini index gives a number inside the interval $[0,1]$, the more the index close to 1, the worse the inequality problem is.
+Income inequality continues to catch world-wide attention. The most famous method to measure it the Gini coefficient. 
+Gini coefficient gives a number inside the interval $[0,1]$ as its result, the more the index close to 1, the worse the inequality is.
 
 Assume we will investigate the situation of income inequality for the scale of a town (e.g., Hofn, Vardo and Takazaki are all towns).
+Then the followings are some useful notations.
 
-Then denote the population of the town as $n$, note that this is given.
+Denote the population of the town as $n$, which is provided.
 
-Denote the total amount of wealth of the town as $M$, which is also given by consulting the Hall of the town.
+Denote the total amount of wealth of the town as $M$, which is also accessible by consulting the Hall of the town.
 
 Denote the average amount of wealth as $\mu = \frac{M}{n}$.
 
 For the i-th individual (i ranges from 1 to n), denote the his individual amount of wealth as $m_i$, note that $\sum_{i=1}^{n}m_i=M.$
 
-Then if we follow the definition of Gini index, we need to calculate $$G=\frac{1}{2n^2\mu}\sum_{j=1}^{n}\sum_{i=1}^{n}|m_i-m_j|.$$
-But this is troublesome because it is hard to estimate the $G$ of a town properly from a sample of smaller size. 
-Hence we switch to another method of measuring the inequality.
+Then if we follow the definition of Gini coefficient, we need to calculate $$G=\frac{1}{2n^2\mu}\sum_{j=1}^{n}\sum_{i=1}^{n}|m_i-m_j|.$$
+Which is a $\tau$-typed metric. But this is troublesome because it is hard to estimate the $G$ of a town properly from a sample with smaller size, 
+while the Gini coefficient counts every pairs of difference. 
+Hence we need to switch to another method of measuring the inequality.
 
 
 \section{Mathematical Model}
 
 \subsection{Derived from the Concept of Entropy}
 
-As said above, hindered by the complex way to calculate the Gini index out and noted that the Islands provide the information of the total amount of a town and every individual's. 
-We can then understand the concept of "income euqality" from the perspective of the difference between "every person's ability (as a possibility) to gain wealth".
+As said above, hindered by the complex way to calculate the Gini coefficient and noted that the Islands provide the information of the total amount of a town and every individual's. 
+We can then understand the concept of income euqality from the perspective of every person's ability (as a possibility) to gain wealth.
 
-For the i-th person, we regard the ratio between his own wealth and the total wealth, i.e., $p_i=\frac{m_i}{M}$ of the town as his "possibility of gaining a unit of wealth".
+For the i-th person, we regard the ratio between his own wealth and the total wealth, 
+i.e., $p_i=\frac{m_i}{M}$, as his possibility of gaining a unit of wealth.
 
-Note that $\sum_{i=1}^{n}p_i=1,$ hence the $p_i$ forms a proper probability distribution. Note that the entropy $$H(p_1,\dots,p_n)=-\sum_{i=1}^{n}p_i\log_{n}{p_i}$$ actually measures the 
-inequality of the town economy. Hence define it as the "$H$ index" of the economy.
+Note that $\sum_{i=1}^{n}p_i=1,$ hence the $p_i$ forms a proper probability distribution. 
+Note that the entropy $$H(p_1,\dots,p_n)=-\sum_{i=1}^{n}p_i\log_{n}{p_i}$$ actually measures the 
+inequality of the town economy. Define it as the $H$ index of the economy.
 
-When the town economy is the most fair, i.e., everyone has the same probability of earning money: $p_i=\frac{1}{n}$, $\forall i=1,2,\dots n$, then $$H(p_1,\dots, p_n)=-\sum_{i=1}^{n}p_i\log_{n}{p_i}=-\sum_{i=1}^{n}\frac{1}{n}\log_{n}{\frac{1}{n}}=1.$$ 
+When the town economy is the most fair, i.e., everyone has the same probability of earning money: 
+$p_i=\frac{1}{n}$, $\forall i=1,2,\dots n$, then $$H(p_1,\dots, p_n)=-\sum_{i=1}^{n}p_i\log_{n}{p_i}=-\sum_{i=1}^{n}\frac{1}{n}\log_{n}{\frac{1}{n}}=1.$$ 
 
-When the economy is extremly inequal, i.e., all the money go to one person, then the entropy will be 0.
+When the economy is extremly inequal, i.e., all the money go to one person, then the entropy will be 0. Also Note that the $H$ index is a $\tau$-type metric, so all the knowledge for estimating $\tau$ can be applied properly.
 
-The following is a simple example of the application of this Mathematical model. Consider a economy with only 3 people, each income is 10, 20, 15. 
+\subsection{A Small Example}
+
+The following is a simple example of the application of this H index. 
+
+Consider a economy with only 3 people, each income is 10, 20, 15. 
 And another economy with 3 people with each income  3, 7, 40. The first economy has $H_1=0.9656$ and the second economy with $H_2=0.5666,$ which conforms our intuition.
-
-
-Note that the $H$ index is a $\tau$-type metric, so all the knowledge for estimating $\tau$ can be applied properly.
 
 
 \section{Sampling Method}
@@ -113,16 +121,17 @@ since we cannot have such a whole list to randomly choosing elements from. There
 
 \subsection{Not Forming Clusters Geographically}
 This is an empirical decision from my investigating on some towns. I observed that the neighbourhoods of a person is likely to have similar economic status with him.
-In other words, people sharing similar economic status are likely to gather together geographically as a cluster. Hence I will not use Cluster Sampling under such way of forming clusters.
+In other words, people sharing similar economic status are likely to gather together geographically as a cluster. 
+Hence I will not use Cluster Sampling when forming clusters geographically.
 
 \subsection{Our Sampling Method}
 We will adopt Cluster Sampling by forming clusters in a special way, more explicitly, in a systematic sampling manner.
 
 First, we select a proper number $s$ as the stepsize, and $r$.
 
-We will classify all the people whose house number modulus $s$ equals $r$.
+We will classify all the people whose house number modulus $s$ equals $r$ into a same group.
 
-Note that there are $N=\frac{T}{s}$ clusters in totals, where $T$ is the number of NON-EMPTY houses in the town.
+Note that there are $N=\frac{T}{s}$ clusters in totals, where $T$ is the number of houses in the town.
 
 We choose $N_c$ clusters from the $N$ clusters by SRS. 
 
@@ -181,9 +190,7 @@ This is caused because they are not able to earn money yet, which is no business
 count they having no money into the situation of income inequality.
 
 \subsubsection{Too Few and Too Large Clusters}
-In the preliminary survey, I only divide the whole town into 15 clusters. Comparing with the examples in the lecture notes, my designing is too few. The clusters should be larger and this is also good for eliminating the $t$ value. 
-
-
+In the preliminary survey, I only divide the whole town into 15 clusters. Comparing with the examples in the lecture notes, my designing is too few. The clusters should be larger and this is also good for eliminating the $t$ value.
 
 
 \end{document}
