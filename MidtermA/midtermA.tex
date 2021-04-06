@@ -51,7 +51,11 @@
 \date{April 6, 2021}
 \maketitle
 
+\begin{abstract}
+    In this report paper, I suggested to measure the income inequality situation of towns in Islands as a $\tau$-type metric using the way one measuring the entropy of a random variable, instead of using the complex Gini coefficient.
+    By denying the feasibilities of other sampling methods, I suggested to use a cluster sampling with a systematic sampling way to form clusters. Though this approach and the sampling methods remain many flaws, I did a small scale trial sampling and gave the result generated.
 
+\end{abstract}
 
 \section{Introduction and Notations}
 Income inequality continues to receive world-wide attention. The most famous method to measure it to use the Gini Index proposed by Gini. 
@@ -94,10 +98,6 @@ And another economy with 3 people with each income  3, 7, 40. The first economy 
 
 Note that the $H$ index is a $\tau$-type metric, so all the knowledge for estimating $\tau$ can be applied properly.
 
-\subsection{Some Related Properties}
-
-// TO IMPLEMENT
-
 
 \section{Sampling Method}
 
@@ -124,7 +124,9 @@ We will classify all the people whose house number modulus $s$ equals $r$.
 
 Note that there are $N=\frac{T}{s}$ clusters in totals, where $T$ is the number of NON-EMPTY houses in the town.
 
-We choose $N_c$ clusters from the $N$ clusters by SRS.
+We choose $N_c$ clusters from the $N$ clusters by SRS. 
+
+A good point I want to emphasis here is that, each cluster we construct is geographically scattered all over the town, hence they are likely to have small difference between clusters and larger difference inside a cluster, which is good.
 
 Then, for every chosen cluster $i, i=1,2,\dots N_c$ we go through all the houses and the people inside those houses and collect data from every element(person).
 
@@ -133,17 +135,55 @@ Using formulae $$\hat{\tau}=\hat{H}=N\frac{1}{N_c}\sum_{i=1}^{N_c}Y_i,$$ with $Y
 Recall that $\hat{\tau}$ is unbiased.
 
 Using the formulae 
-$$\hat{Var(\hat{\tau~~~})  }=N_c^2(1-\frac{N_c}{N})\frac{\hat{\sigma_{c}^2}}{N_c},$$ we can have an estimated variance, where the $\hat{\sigma_{c}^2}$ is the sample variance of the cluster totals, i.e., the variance of those $Y_i's$, with $i=1,2,\dots N_c.$
+$$\hat{Var(\hat{\tau~~~})  }=N^2(1-\frac{N_c}{N})\frac{\hat{\sigma_{c}^2}}{N_c},$$ we can have an estimated variance, where the $\hat{\sigma_{c}^2}$ is the sample variance of the cluster totals, i.e., the variance of those $Y_i's$, with $i=1,2,\dots N_c.$
+
+Note that we need to let $N_c>1$ to make sure the $\hat{\sigma_{c}^2}$ is making proper sense.
 
 Thus an appropriate $100(1-\alpha)\%$ C.I.s can be given by $$\hat{\tau} \pm t_{N_c-1,1-\frac{\alpha}{2}}\sqrt{\hat{Var(\hat{\tau~~~})  }}.$$
 
 
+
 \section{Preliminary Survey Result}
 
-We select the town Vardo to be under investigation. 
+We select the town Valais to be under investigation. Valais contains 255 houses.
+
+And we let the stepsize being 17, and choose $N_c=4$ (this is to let the $t_{N_c-1,0.975}$ be at a low level) number from the 1 to 17 to get started.
+Using a calculator's random number function, I obtained: 2, 6, 14 and 17.
+
+Hence I need to investigate about $4 \times 15=60$ houses.
+
+To sum up, $N_c=4, N=17.$ 
+
+And from the investigating, $Y_1=0.020314809, Y_2=0.028761294, Y_3=0.029845762, Y_4=0.02049111.$ 
+
+The point estimate is $$\hat{\tau}=\frac{17}{4}(Y_1+Y_2+Y_3+Y_4)=0.44129.$$
+
+And the estimated variance should be $$\hat{Var(\hat{\tau~~~})  }=1.47\times 10^{-3}.$$
+
+With $t_{3,0.975}=3.182446$, therefore a 95\% C.I. for the H index of Valais is $$0.4413 \pm 0.1220.$$.
+
+This seems to be varying a lot, but I think as it is a metric about the income inequality of a whole town, it is understandable and I believe there are ways to eliminate the variance width.
 
 
 
 \section{Where to Imporve}
+
+\subsection{Problems of Mathematical Model}
+A easy point to be noted is that this entropy model encourages an economy to scaling up with its wealth distribution structure unchanged. 
+While the Gini coefficient regard the above two things' income inequality level as equal. Therefore the more population a town have, it is very likely that the less inequality it will be under my model.
+
+\subsection{Problems of Survey Method}
+To be honest, there are a few problems in my designing of my survey method.
+
+\subsubsection{Kids Won't Have Money}
+Empirically speaking, kids, especially those under 15 years old, will not have money, while those between 15 and 19 are likely to have very few money.
+This is caused because they are not able to earn money yet, which is no business with income inequality, but in my survey I did not split kids out and 
+count they having no money into the situation of income inequality.
+
+\subsubsection{Too Few and Too Large Clusters}
+In the preliminary survey, I only divide the whole town into 15 clusters. Comparing with the examples in the lecture notes, my designing is too few. The clusters should be larger and this is also good for eliminating the $t$ value. 
+
+
+
 
 \end{document}
