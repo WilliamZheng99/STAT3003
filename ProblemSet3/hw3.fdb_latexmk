@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1618149911 "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.tex" "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.pdf" "hw3" 1618149913
+["pdflatex"] 1618149911 "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.tex" "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.pdf" "hw3" 1618150239
   "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.aux" 1618149912 410 82879e86eb48d60e60842dae980e393e ""
-  "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.tex" 1618149910 3594 22d01a2783395cc174bf85bcbbe16c71 ""
+  "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.tex" 1618150238 3594 22d01a2783395cc174bf85bcbbe16c71 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -72,11 +72,11 @@
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1617683666 2724734 cdc08b019e91c51159b5d6d66da729b3 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "hw3.aux" 1618149912 410 82879e86eb48d60e60842dae980e393e "pdflatex"
-  "hw3.tex" 1618149910 3594 22d01a2783395cc174bf85bcbbe16c71 ""
+  "hw3.tex" 1618150238 3594 22d01a2783395cc174bf85bcbbe16c71 ""
   "img/Q1.png" 1618146227 108580 c1f4dc9b372163eca2085409816468ec ""
   (generated)
-  "hw3.pdf"
+  "hw3.aux"
   "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.pdf"
   "hw3.log"
-  "hw3.aux"
+  "hw3.pdf"
   "/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.log"
