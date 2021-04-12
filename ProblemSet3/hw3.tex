@@ -59,6 +59,8 @@
     %\label{fig:figure1label}
 \end{figure}
 
+~\
+
 \subsection{(a)}
 We need to fix the starting point, when start at 1: the number of deliquent accounts is 3, 
 the sample proportion is $\frac{3}{4}.$ 
@@ -104,6 +106,51 @@ And we have $p=0.4, N=40,$ therefore $Var(\hat{p})=0.0554.$
 For $n=8$, $Var(\hat{p})=0.0246.$
 
 When n=4, SRS's variance is smaller and when n=8, SRS's is larger.
+
+Because when $n=4,$ the ICC (intracluster coorelation coefficient) is tend to be larger, because
+ICC represents how things are similar inside a cluster. Therefore $Var(\hat{p})$ tends to be 
+underestimating.
+
+And when $n=8$, the ICC is smaller, then $Var(\hat{p})$ tends to be overestimating.
+
+\newpage
+\section{Q2}
+\begin{figure}[htp]
+    \centering % 图片居中
+    \includegraphics[width = 15cm]{img/Q2.png}
+    %\caption{Section 6.1 Q8}
+    %\label{fig:figure1label}
+\end{figure}
+
+~\ 
+
+Note that we can regard every plant's condition is the same. Therefore we can apply the 
+formulae from SRS: $$n=\frac{1}{\frac{1}{N} + 
+\frac{d^2}{N^2v^2z_{1-\frac{\alpha}{2}}^2}(1-\frac{1}{N})}.$$
+
+The $v$ is the "pre-sample estimate". We calculate it by $Range Rule of Thumb$, which is 
+we calculate the variance by range divide by 4: $v=(10-0)/4=2.5$
+
+And we have $N=20\times 400 = 8000,$ $d=2000,$ $z_{1-\frac{\alpha}{2}}=z_{0.975}=1.96.$
+
+Hence we can calculate $n=366.6016.$ Therefore we take $n=367.$
+
+And by $8000/366.6=21.8221.$ So take $k$ (the stepsize) be 21. 
+
+To summarize, we should perform a 1-in-21 systematic sampling.
+
+
+\newpage
+\section{Q3}
+\begin{figure}[htp]
+    \centering % 图片居中
+    \includegraphics[width = 15cm]{img/Q3.png}
+    %\caption{Section 6.1 Q8}
+    %\label{fig:figure1label}
+\end{figure}
+
+~\ 
+
 
 
 
