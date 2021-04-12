@@ -143,13 +143,39 @@ To summarize, we should perform a 1-in-21 systematic sampling.
 \newpage
 \section{Q3}
 \begin{figure}[htp]
-    \centering % 图片居中
-    \includegraphics[width = 15cm]{img/Q3.png}
+     % 图片居中
+    \includegraphics[width = 14cm]{img/Q3.png}
     %\caption{Section 6.1 Q8}
     %\label{fig:figure1label}
 \end{figure}
 
 ~\ 
+
+For sure we will apply the "using auxiliary data" method.
+
+Define $X_i$ is the number of students in sampled class $i$. (E.g. 
+$X_1=31$.)
+
+Define $Y_i$ is the total score of sampled class $i$. (E.g. $Y_1=1590.$)
+
+Hence $\bar{Y}=\frac{1}{25}\sum_{i=1}^{25}Y_i=1398.28.$ And 
+$\bar{X}=\frac{1}{25}\sum_{i=1}^{25}X_i=27.12.$ 
+Then $$\hat{R}=\frac{\bar{Y}}{\bar{X}}=51.5590.$$
+
+Hence $\hat{\mu}=51.5590.$
+
+Then using the formulae 
+$\widehat{Var(\hat{\mu})}=\frac{N}{M^2}(N-n)\frac{1}{n}\hat{\sigma_r^{2}}.$ 
+Where $\hat{\sigma_r^{2}}=10808.7251.$
+
+We can gain that $\widehat{Var(\hat{\mu})}=0.3164.$
+
+Therefore, an 95\% C.I. can be $(51.5590 \pm t_{24,0.975}\sqrt{0.3164}~)=(50.3981,52.7199).$
+
+Recall that the result from Problem Set 2 is $(43,147 \pm 4.3081).$
+
+I prefer the biased approach, because this has a much smaller variance.
+
 
 
 
