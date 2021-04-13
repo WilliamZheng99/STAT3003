@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.6)  13 APR 2021 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.6)  13 APR 2021 18:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,20 +305,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--187
 [][]
  []
 
-[5 </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q4.png> </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q3(2).png>] (/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.aux) ) 
+[5 </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q4.png> </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q3(2).png>]
+<img/Q5(1).png, id=42, 540.0175pt x 43.16125pt>
+File: img/Q5(1).png Graphic file (type png)
+<use img/Q5(1).png>
+Package pdftex.def Info: img/Q5(1).png  used on input line 220.
+(pdftex.def)             Requested size: 398.33858pt x 31.83804pt.
+<img/Q5(2).png, id=43, 532.99126pt x 118.4425pt>
+File: img/Q5(2).png Graphic file (type png)
+<use img/Q5(2).png>
+Package pdftex.def Info: img/Q5(2).png  used on input line 221.
+(pdftex.def)             Requested size: 398.33858pt x 88.5226pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--224
+[][]
+ []
+
+[6 </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q5(1).png> </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q5(2).png>]
+<img/Q6.png, id=49, 544.0325pt x 292.09125pt>
+File: img/Q6.png Graphic file (type png)
+<use img/Q6.png>
+Package pdftex.def Info: img/Q6.png  used on input line 240.
+(pdftex.def)             Requested size: 398.33858pt x 213.87999pt.
+ [7 </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q6.png>]
+<img/Q7.png, id=55, 540.0175pt x 83.31125pt>
+File: img/Q7.png Graphic file (type png)
+<use img/Q7.png>
+Package pdftex.def Info: img/Q7.png  used on input line 275.
+(pdftex.def)             Requested size: 398.33858pt x 61.45485pt.
+ [8 </Users/wangyide/Desktop/STAT3003/ProblemSet3/img/Q7.png>] (/Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.aux) ) 
 Here is how much of TeX's memory you used:
- 3861 strings out of 478994
- 55195 string characters out of 5858185
+ 3885 strings out of 478994
+ 55531 string characters out of 5858185
  355185 words of memory out of 5000000
- 21290 multiletter control sequences out of 15000+600000
+ 21310 multiletter control sequences out of 15000+600000
  419188 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,74p,267b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.pdf (5 pages, 340074 bytes).
+Output written on /Users/wangyide/Desktop/STAT3003/ProblemSet3/hw3.pdf (8 pages, 430296 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
