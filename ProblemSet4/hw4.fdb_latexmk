@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1618498899 "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.tex" "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.pdf" "hw4" 1618498900
+["pdflatex"] 1618498899 "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.tex" "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.pdf" "hw4" 1618499907
   "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.aux" 1618498900 494 5fbc9814e5cb6a8eaf10658938e096e3 ""
-  "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.tex" 1618498896 4007 26960e7d22417b8cdaca1cdd2baf2aea ""
+  "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.tex" 1618499907 4007 26960e7d22417b8cdaca1cdd2baf2aea ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -77,14 +77,14 @@
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1617683666 2724734 cdc08b019e91c51159b5d6d66da729b3 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "hw4.aux" 1618498900 494 5fbc9814e5cb6a8eaf10658938e096e3 "pdflatex"
-  "hw4.tex" 1618498896 4007 26960e7d22417b8cdaca1cdd2baf2aea ""
+  "hw4.tex" 1618499907 4007 26960e7d22417b8cdaca1cdd2baf2aea ""
   "img/Q1.png" 1618494474 78773 5dd6bb3178b6701daa25f7d053509f0a ""
   "img/Q2.png" 1618495653 107603 9b38c1b24a7b29a0529291bc253b3819 ""
   "img/Q3(1).png" 1618498828 50768 7100c7a6ff6cb1a9ffc86578da221118 ""
   "img/Q3(2).png" 1618498847 93614 85a25e579a0c224d3f0a8554f905e57a ""
   (generated)
+  "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.log"
+  "hw4.log"
   "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.pdf"
   "hw4.pdf"
-  "/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.log"
   "hw4.aux"
-  "hw4.log"
