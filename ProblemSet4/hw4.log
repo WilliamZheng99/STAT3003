@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.6)  15 APR 2021 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.6)  29 APR 2021 03:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,20 +299,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 [][]
  []
 
-[3 </Users/wangyide/Desktop/STAT3003/ProblemSet4/img/Q3(1).png> </Users/wangyide/Desktop/STAT3003/ProblemSet4/img/Q3(2).png>] (/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.aux) ) 
+[3 </Users/wangyide/Desktop/STAT3003/ProblemSet4/img/Q3(1).png> </Users/wangyide/Desktop/STAT3003/ProblemSet4/img/Q3(2).png>] [4] [5]
+<img/Q4.png, id=39, 619.31375pt x 371.3875pt>
+File: img/Q4.png Graphic file (type png)
+<use img/Q4.png>
+Package pdftex.def Info: img/Q4.png  used on input line 299.
+(pdftex.def)             Requested size: 426.79134pt x 255.94595pt.
+ [6 </Users/wangyide/Desktop/STAT3003/ProblemSet4/img/Q4.png>] [7] (/Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.aux) ) 
 Here is how much of TeX's memory you used:
- 3855 strings out of 478994
- 55138 string characters out of 5858185
- 357185 words of memory out of 5000000
- 21285 multiletter control sequences out of 15000+600000
+ 3861 strings out of 478994
+ 55213 string characters out of 5858185
+ 365185 words of memory out of 5000000
+ 21290 multiletter control sequences out of 15000+600000
  419188 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,74p,267b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.pdf (3 pages, 350528 bytes).
+Output written on /Users/wangyide/Desktop/STAT3003/ProblemSet4/hw4.pdf (7 pages, 432406 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
