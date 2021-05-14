@@ -73,9 +73,40 @@ it directly affects the life quality of many of us, especially the poor,
 which is in line with our intuition and daily experience 
 in the avenues and streets of our city of Hong Kong, 
 which is a region famous for its acutely huge gap between rich and poor.
+On the other hand, as stated by the Washington Post, income inequality also
+hurts economic growth, especially high inequality in rich nations. 
+Awaring of the importance of studying in this topic,
+we decide to measure the level of income inequality 
+for each town of the Islands as an economy of a certain scale. 
+
+As suggested by the survey plan (i.e., the Midterm A part), 
+we adopted the entropy index so called "$H$ index" in the plan. 
+We do not ues the Gini coefficient because 
+this Mathematical model has much better additive property hence 
+it is possible for us to "estimate" it from a fraction of the population.
 
 
-"hurts economic growth, especially high inequality in rich nations"
+\section{Mathematical Model to Measure Income Inequality}
+Suppose a town has a population of $n$. 
+And the total wealth of this town is $W$. 
+For every person $i$ ($i$ ranges from 1 to $n$) in this town, 
+denote the wealth he possesses is $w_i$, define 
+$$y_i := -\frac{w_i}{W}\log_{n}{ \frac{w_i}{W} } ,~ \forall i.$$
+
+Then the $H$ index of this town is defined as 
+$$H:=\sum_{i=1}^{n}y_i= \sum_{i=1}^n -\frac{w_i}{W}\log_{n}{\frac{w_i}{W}}.$$
+
+This measurement treats income inequality as the uncertainty 
+(more academically, entropy) of 
+whose pocket, among those all possible $n$ people, will a dollar go into, 
+while treating everyone's possibility of earning it as 
+proportional to his current wealth.
+
+From $H$ index's definition, it is a $\tau$-typed metric, 
+with value ranges from 0 to 1. 
+1 stands for the case that the income is evenly distributed to everyone,
+while 0 stands for the case that 
+someone evil and greedy is holding all the money.
 
 
 \end{document}
