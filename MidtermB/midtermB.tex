@@ -45,7 +45,6 @@
 
 \begin{document}
 
-\large
 
 \title{
 Investigation on income inequality of the Islands\\
@@ -80,35 +79,39 @@ Awaring of the importance of studying in this topic,
 we decide to measure the level of income inequality 
 for each town of the Islands as an economy of a certain scale. 
 
-As suggested by the survey plan (i.e., the Midterm A part), 
-we adopted the entropy index so called "$H$ index" in the plan. 
+Based on the survey plan (i.e., the Midterm A part), 
+we improved the original entropy measurement. 
 We do not ues the Gini coefficient because 
-this Mathematical model has much better additive property hence 
-it is possible for us to "estimate" it 
-as a $\tau$-typed metric from a fraction of the population.
+Gini coefficient does not have additive property.
 
 
 \section{Mathematical Model to Measure Income Inequality}
 Suppose a town has a population of $n$. 
 And the total wealth of this town is $W$. 
+Denote the average income as $\bar{w}=\frac{W}{n}$.
 For every person $i$ ($i$ ranges from 1 to $n$) in this town, 
 denote the wealth he possesses is $w_i$, define 
-$$y_i := -\frac{w_i}{W}\log_{n}{ \frac{w_i}{W} } ,~ \forall i.$$
+$$y_i := \frac{w_i}{\bar{w}}\ln{ \frac{w_i}{\bar{w}} } ,~ \forall i.$$
 
-Then the $H$ index of this town is defined as 
-$$H:=\sum_{i=1}^{n}y_i= \sum_{i=1}^n -\frac{w_i}{W}\log_{n}{\frac{w_i}{W}}.$$
+We adpot the Theil index Mathematical model, (applied in OECD, 
+the Organisation for Economic Co-operation and Development) 
+which is defined as 
+$$T:=\frac{1}{n}\sum_{i=1}^{n}y_i
+=\frac{1}{n}\sum_{i=1}^n \frac{w_i}{\bar{w}}\ln{ \frac{w_i}{\bar{w}} }.$$
 
-This measurement treats income inequality as the uncertainty 
-(more academically, entropy) of 
+This measurement is improved 
+from the simple entropy measurement I proposed in part A, 
+which treats income inequality as the uncertainty of 
 whose pocket, among those all possible $n$ people, will a dollar go into, 
 while treating everyone's possibility of earning it as 
-proportional to his current wealth.
-
-From $H$ index's definition, it is a $\tau$-typed metric, 
-with value ranges from 0 to 1. 
-1 stands for the case that the income is evenly distributed to everyone,
-while 0 stands for the case that 
-someone evil and greedy is holding all the money.
+proportional to his current wealth. 
+In addition, this $T$ index has an extra property that 
+it valuates regions irrespective of its extent, 
+which means the problem that 
+our original model encourages more population is overcomed.
+From $T$ index's definition, it is a $\mu$-typed metric, with special case 
+$T=0$ stands for all money are evenly distributed 
+and any other (higher) value represents a higher level of disproportion.
 
 \section{Core Survey Method}
 We adopted an two-stage cluster sampling. 
@@ -122,22 +125,22 @@ For each selected cluster,
 we denote the number of elements (number of valid people) inside as $M_i$.
 (3) To do the second-stage sampling, we SRS $m_i$ from the $M_i$ elements.
 
-The unbiased point $\tau$ estimator formulae for two-stage cluster sampling is 
-$$\hat{\tau}=\hat{H}=N\frac{1}{n} \sum_{i=1}^n \hat{y_i},~
+The unbiased point $\mu$ estimator formulae for two-stage cluster sampling is 
+$$\hat{\mu}=\hat{T}=\frac{N}{Mn} \sum_{i=1}^n \hat{y_i},~
 \hat{y_i}=M_i\frac{1}{m_i} \sum_{j=1}^{m_i}y_{ij}.$$
 
 And the formulae of estimated variance is 
-$$\widehat{Var(\hat{\tau})} = 
-N(N-n)\frac{1}{n}\hat{\sigma_c}^2
-+\frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i}^2.$$ 
+$$\widehat{Var(\hat{\mu})} = 
+\frac{1}{M^2}N(N-n)\frac{1}{n}\hat{\sigma_c}^2
++\frac{1}{M^2}\frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i}^2.$$ 
 Where the $\hat{\sigma_c}^2$ is the sample variance of the estimated cluster
 totals and $\hat{\sigma_i}^2$ is the sample variance inside cluster $i$.
 
 Hence an appropriate $100(1-\alpha)\% $ C.I. can be given by 
-$$(\hat{\tau} \pm z_{1-\frac{\alpha}{2}} \sqrt{\widehat{Var(\hat{\tau})}}~).$$
+$$(\hat{\mu} \pm z_{1-\frac{\alpha}{2}} \sqrt{\widehat{Var(\hat{\mu})}}~).$$
 
-Recall that in the A part we issued two problems, 
-one of them is when using ordinary cluster sampling, 
+Recall that we issued in the A part that 
+when using ordinary cluster sampling, 
 the clusters are tend to be too large. 
 Not only to be more efficient, but also
 base on the fact that the population is large and supposely many elements
@@ -169,57 +172,118 @@ result to be 7, 20, 82, 101. Let $m_1 = m_2 = m_3 = m_4 = 4,$
 conducting the sampling, we have 
 $$M_1 = 11, M_2 = 13, M_3 = 12, M_4=14.$$ 
 With 
-$$\bar{Y_1}=1.42792\cdot 10^{-4}, \bar{Y_2}=5.39019\cdot 10^{-4}, 
-\bar{Y_3}=5.35803\cdot 10^{-4}, \bar{Y_4}=3.85439\cdot 10^{-4}.$$
+$$\bar{Y_1}=-0.1926, \bar{Y_2}=0.6950, 
+\bar{Y_3}=0.8072, \bar{Y_4}=0.3352.$$
 
 Using the formulae 
 $$\hat{Y_i}=\frac{M_i}{m_i}\sum_{j=1}^{m_i}Y_{ij}=M_i \bar{Y_i},$$ 
 we can have 
 $$
-\hat{Y_1}=5.71169\cdot 10^{-4}, \hat{Y_2}=2.156076\cdot 10^{-3},
-\hat{Y_3}=2.14321\cdot 10^{-3}, \hat{Y_4}=1.541755\cdot 10^{-3}.
+\hat{Y_1}=-2.1186, \hat{Y_2}=9.0355,
+\hat{Y_3}=9.6859, \hat{Y_4}=4.6925.
 $$
 
 From $\bar{Y}=\frac{1}{n}\sum_{i=1}^n \hat{Y_i}$, 
-we can have $\bar{Y}=1.60305\cdot 10^{-3}$. 
-And then the point estimate is 
-$$\hat{\tau} = \hat{H} 
+we can have $\bar{Y}=5.3238$. 
+And then the point estimate of $\tau$ is 
+$$\hat{\tau}
 = N\frac{1}{n} \sum_{i=1}^n \hat{Y_i} 
-= \frac{150}{4}\cdot 6.41221\cdot 10^{-3}=0.24046.$$
+= \frac{150}{4}\cdot 5.3238=798.5736.$$
+
+Hence $$\hat{\mu}=\frac{1}{M}\hat{\tau}=\frac{1}{1801}\cdot 798.5736=0.4434.$$
 
 Note that 
 $$
-\hat{\sigma_1}^2=2.8518\cdot 10^{-8}, \hat{\sigma_2}^2=9.85337\cdot 10^{-8},
-\hat{\sigma_3}^2=1.40172\cdot 10^{-7}, \hat{\sigma_4}^2=1.1658\cdot 10^{-7}.
+\hat{\sigma_1}^2=0.0103, 
+\hat{\sigma_2}^2=0.4692,
+\hat{\sigma_3}^2=1.1882, 
+\hat{\sigma_4}^2=0.5203.
 $$
 
 Using the formulae 
 $$\hat{\sigma_c}^2=\frac{ \sum_{i=1}^n (\hat{Y_i} - \bar{Y})^2 }{n-1},$$
-we have $\hat{\sigma_c}^2 = 5.55382\cdot 10^{-7}.$ Then 
-$$\widehat{Var(\hat{\tau})} 
-= N(N-n)\frac{1}{n}\hat{\sigma_c}^2
-+\frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i}^2
-=3.44855\cdot 10^{-3}.$$
+we have $\hat{\sigma_c}^2 = 29.5308.$ Then 
+$$\widehat{Var(\hat{\mu})} 
+= \frac{1}{M^2}N(N-n)\frac{1}{n}\hat{\sigma_c}^2
++\frac{1}{M^2}\frac{N}{n}\sum_{i=1}^{n}M_i(M_i-m_i)\frac{1}{m_i}\hat{\sigma_i}^2
+=0.050547.$$
 
-Therefore a 95\% C.I. for the $H$ index of Hofn can be given by: 
-$$(\hat{\tau} \pm z_{1-\frac{\alpha}{2}}\sqrt{\widehat{Var(\hat{\tau})}}~)
-=(0.24046 \pm 1.96\cdot \sqrt{3.44855\cdot 10^{-3}}~)
-=(0.24046 \pm 0.1151).$$
+Therefore a 90\% C.I. for the $T$ index of Hofn can be given by: 
+$$(\hat{\mu} \pm z_{1-\frac{\alpha}{2}}\sqrt{\widehat{Var(\hat{\mu})}}~)
+=(0.4434 \pm 1.64\cdot \sqrt{0.050547}~)
+=(0.4434 \pm 0.3687).$$
 
 \section{Survey Results}
 \subsection{Results for Other Towns}
-We selected some town and applied the survey method, 
-the towns we selected are: Talu, Nelson, Takazaki, Kiyobico and Helluland.
+We selected some other towns and applied the above survey method, 
+the selected towns are: Talu, Nelson, Takazaki and Valais.
 
-Talu: $\hat{\tau}=0.262523$, and $\widehat{Var(\hat{\tau})}=2.80356\cdot 10^{-3}.$ 
-Hence a 95\% C.I. for the $H$ index of Talu can be $(0.262523 \pm 0.10378)$.
+~\ 
 
+Talu: 
+
+$\hat{\mu}=0.2965$, 
+and $\widehat{Var(\hat{\mu})}=0.0127.$ 
+
+A 90\% C.I. can be $(0.2965 \pm 1.64\cdot \sqrt{0.0127} )=(0.2965 \pm 0.1848)$.
+
+~\ 
+
+Nelson: 
+
+$\hat{\mu}=0.4128$, 
+and $\widehat{Var(\hat{\mu})}=0.0515.$ 
+
+A 90\% C.I. can be $(0.4128 \pm 1.64\cdot \sqrt{0.0515} )=(0.4128 \pm 0.3722)$.
+
+~\ 
+
+Takazaki: 
+
+$\hat{\mu}=0.1969$, 
+and $\widehat{Var(\hat{\mu})}=0.04239.$ 
+
+A 90\% C.I. can be $(0.1969 \pm 1.64\cdot \sqrt{0.04239} )
+=(0, 0.5346)$.
+
+~\ 
+
+Valais: 
+
+$\hat{\mu}=0.60204$, 
+and $\widehat{Var(\hat{\mu})}=0.03545.$ 
+
+A 90\% C.I. can be $(0.60204 \pm 1.64\cdot \sqrt{0.03545} )
+=(0.60204 \pm 0.3088)$.
 
 
 \subsection{Interpretation of Survey Results}
 
+\begin{center}
+        \begin{tabular}{ | c | c | c | c |}
+            \hline
+                 & $T$ index point estimate 	& Total Population	  \\ 
+            \hline
+            Hofn 	& 0.4434		& 2143	 \\ 
+            \hline 
+            Talu & 0.2965 		& 1077	 \\ 
+            \hline 
+            Nelson & 0.4128 		& 551	 \\ 
+            \hline 
+            Valais & 0.6020 		& 530	 \\ 
+            \hline 
+            Takazaki & 0.1969 		& 357	 \\ 
+            \hline
+        \end{tabular}
+\end{center}
 
-
+Above is the table of our survey results, 
+comparing with the population of the towns. 
+We can see that $T$ index is functioning well, not affected by population.
+From this table, together with the previous results, 
+we are confident to draw a conclusion that Valais is very likely to  
+have serious wealth inequality problem, 
+while Takazaki and Talu are likely to be good in this regard.
 
 
 
