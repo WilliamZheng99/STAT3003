@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1621120765 "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.tex" "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.pdf" "midtermB" 1621120766
-  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.aux" 1621120766 1060 30dfd52d2b779e2bf961e0bdb400eaa4 ""
-  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.tex" 1621120763 10142 bc309083c61c06eac0d327383fb817ab ""
+["pdflatex"] 1621144606 "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.tex" "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.pdf" "midtermB" 1621146436
+  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.aux" 1621144607 1178 584f9bd8152a488aff0ede68fc59e2c0 ""
+  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.tex" 1621146433 10182 482b244d59b272a6cec323b99ee040fc ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -76,11 +76,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1617683666 2724734 cdc08b019e91c51159b5d6d66da729b3 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "midtermB.aux" 1621120766 1060 30dfd52d2b779e2bf961e0bdb400eaa4 "pdflatex"
-  "midtermB.tex" 1621120763 10142 bc309083c61c06eac0d327383fb817ab ""
+  "midtermB.aux" 1621144607 1178 584f9bd8152a488aff0ede68fc59e2c0 "pdflatex"
+  "midtermB.tex" 1621146433 10182 482b244d59b272a6cec323b99ee040fc ""
   (generated)
   "midtermB.log"
-  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.pdf"
+  "midtermB.aux"
   "midtermB.pdf"
   "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.log"
-  "midtermB.aux"
+  "/Users/wangyide/Desktop/STAT3003/MidtermB/midtermB.pdf"
