@@ -47,48 +47,46 @@
 
 
 \title{
-Investigation on income inequality of the Islands\\
+Investigation on wealth inequality of the Islands\\
 \Large STAT3003 Midterm B - Survey Report}
 \author{Zheng Weijia (William, 1155124322) \\
 Department of Statistics,
-%\thanks{I am no longer a member of this department}, 
 The Chinese University of Hong Kong}
 \date{May 13, 2021}
 \maketitle
 
 \begin{abstract}
     Following the survey plan completed one month ago in April, 
-    while adopting its Mathematical model and 
+    while improving its Mathematical model and 
     overall structure of the designing of sampling method, 
-    we improved some technical points in that plan 
-    to measure the income inequality of the Islands towns better. 
+    we adjusted some technical points in that plan 
+    to measure the wealth inequality of the Islands towns better. 
     In this report, we will show the specific mothod we chose, 
     the survey results and their interpretations as well.
 
 \end{abstract}
 
 \section{Introduction}
-Income inequality problem is drawing worldwide attention, 
+Wealth inequality problem is drawing worldwide attention, 
 it directly affects the life quality of many of us, especially the poor, 
 which is in line with our intuition and daily experience 
 in the avenues and streets of our city of Hong Kong, 
 which is a region famous for its acutely huge gap between rich and poor.
-On the other hand, as stated by the Washington Post, income inequality also
+On the other hand, as stated by the Washington Post, wealth inequality also
 hurts economic growth, especially high inequality in rich nations. 
 Awaring of the importance of studying in this topic,
-we decide to measure the level of income inequality 
-for each town of the Islands as an economy of a certain scale. 
-
+we decide to measure the level of wealth inequality 
+for some towns of the Islands as an economy of a certain scale. 
 Based on the survey plan (i.e., the Midterm A part), 
-we improved the original entropy measurement. 
+we changed the original entropy measurement. 
 We do not ues the Gini coefficient because 
 Gini coefficient does not have additive property.
 
 
-\section{Mathematical Model to Measure Income Inequality}
+\section{Mathematical Model to Measure Wealth Inequality}
 Suppose a town has a population of $n$. 
-And the total wealth of this town is $W$. 
-Denote the average income as $\bar{w}=\frac{W}{n}$.
+And the total wealth of this town being $W$. 
+Denote the average wealth as $\bar{w}=\frac{W}{n}$.
 For every person $i$ ($i$ ranges from 1 to $n$) in this town, 
 denote the wealth he possesses is $w_i$, define 
 $$y_i := \frac{w_i}{\bar{w}}\ln{ \frac{w_i}{\bar{w}} } ,~ \forall i.$$
@@ -101,7 +99,7 @@ $$T:=\frac{1}{n}\sum_{i=1}^{n}y_i
 
 This measurement is improved 
 from the simple entropy measurement I proposed in part A, 
-which treats income inequality as the uncertainty of 
+which treats wealth inequality as the uncertainty of 
 whose pocket, among those all possible $n$ people, will a dollar go into, 
 while treating everyone's possibility of earning it as 
 proportional to his current wealth. 
@@ -114,16 +112,24 @@ $T=0$ stands for all money are evenly distributed
 and any other (higher) value represents a higher level of disproportion.
 
 \section{Core Survey Method}
-We adopted an two-stage cluster sampling. 
-Imagine a town with $T$ houses. 
+Recall that we issued in the A part, 
+when using ordinary cluster sampling, 
+the clusters are tend to be too large. 
+Not only to be more efficient, but also
+base on the fact that the population is large and supposely many elements
+inside a cluster are similar, 
+we chose to go with two-stage cluster sampling method.
+
+Suppose the population of the town is $M.$
 (1) To form an large cluster, choose an integer $N$ 
-and all house whose house numbers are congruent to modulo $N$
+and all houses whose house numbers are congruent to modulo $N$
 are grouped into a same cluster. 
 Therefore $N$ also stands for the number of clusters in the population. 
 (2) To do the first-stage sampling, we SRS $n=4$ from the $N$ clusters. 
 For each selected cluster,
 we denote the number of elements (number of valid people) inside as $M_i$.
-(3) To do the second-stage sampling, we SRS $m_i$ from the $M_i$ elements.
+(3) To do the second-stage sampling, 
+we SRS $m_i$ elements from the $M_i$ for each $i$.
 
 The unbiased point $\mu$ estimator formulae for two-stage cluster sampling is 
 $$\hat{\mu}=\hat{T}=\frac{N}{Mn} \sum_{i=1}^n \hat{y_i},~
@@ -139,39 +145,33 @@ totals and $\hat{\sigma_i}^2$ is the sample variance inside cluster $i$.
 Hence an appropriate $100(1-\alpha)\% $ C.I. can be given by 
 $$(\hat{\mu} \pm z_{1-\frac{\alpha}{2}} \sqrt{\widehat{Var(\hat{\mu})}}~).$$
 
-Recall that we issued in the A part that 
-when using ordinary cluster sampling, 
-the clusters are tend to be too large. 
-Not only to be more efficient, but also
-base on the fact that the population is large and supposely many elements
-inside a cluster are similar, 
-we chose to go with two-stage cluster sampling method.
 
 \section{Case Demonstration}
 \subsection{Always Subtract the Number of Kids}
 Another problem issued by A part is about the kids. 
-Kids' having no money should not be counted for income inequality. 
+Kids' having no money should not be counted for wealth inequality. 
 In our formulae, $M$ and $M_i$ are related with number of kids. 
 The latter can be easily handled because 
 we observe every element of cluser $i$.
 We can get a very accurate estimated $M$, 
 the number of all non-kid (older than 12 years old), 
-by subtracting (1) the number of all 0 to 5 years old babies, 
+by subtracting (1) the number of all preschooler babies, 
 which can be obtained by inspecting the born record in Town Hall, and 
-(2) the number of school students, whose ages are 5 to 12 strictly.
+(2) the number of elementary school students, whose ages are 5 to 12 strictly.
 
 \subsection{Case Example: Hofn}
 Hofn is a northern town in the northernmost island of the three. 
 It has a total population of 2143, with total number of houses being 1055.
 
-After eliminating the number of preschooler (96) and school students (246), 
+After eliminating the number of preschoolers (96) and school students (246), 
 we have the number of valid people being $$M=2143-96-246=1801.$$ 
 
 Take $N=150$, we SRS $n=4$ numbers between 1 and 150 inclusively, 
-result to be 7, 20, 82, 101. Let $m_1 = m_2 = m_3 = m_4 = 4,$
-conducting the sampling, we have 
+result to be 7, 20, 82, 101.
+Conducting the sampling, we have 
 $$M_1 = 11, M_2 = 13, M_3 = 12, M_4=14.$$ 
-With 
+Let $m_1 = m_2 = m_3 = m_4 = 4,$
+we have 
 $$\bar{Y_1}=-0.1926, \bar{Y_2}=0.6950, 
 \bar{Y_3}=0.8072, \bar{Y_4}=0.3352.$$
 
@@ -188,7 +188,7 @@ we can have $\bar{Y}=5.3238$.
 And then the point estimate of $\tau$ is 
 $$\hat{\tau}
 = N\frac{1}{n} \sum_{i=1}^n \hat{Y_i} 
-= \frac{150}{4}\cdot 5.3238=798.5736.$$
+= 150\cdot 5.3238=798.5736.$$
 
 Hence $$\hat{\mu}=\frac{1}{M}\hat{\tau}=\frac{1}{1801}\cdot 798.5736=0.4434.$$
 
@@ -222,8 +222,7 @@ the selected towns are: Talu, Nelson, Takazaki and Valais.
 
 Talu: 
 
-$\hat{\mu}=0.2965$, 
-and $\widehat{Var(\hat{\mu})}=0.0127.$ 
+$\hat{\mu}=0.2965$, and $\widehat{Var(\hat{\mu})}=0.0127.$ 
 
 A 90\% C.I. can be $(0.2965 \pm 1.64\cdot \sqrt{0.0127} )=(0.2965 \pm 0.1848)$.
 
@@ -231,8 +230,7 @@ A 90\% C.I. can be $(0.2965 \pm 1.64\cdot \sqrt{0.0127} )=(0.2965 \pm 0.1848)$.
 
 Nelson: 
 
-$\hat{\mu}=0.4128$, 
-and $\widehat{Var(\hat{\mu})}=0.0515.$ 
+$\hat{\mu}=0.4128$, and $\widehat{Var(\hat{\mu})}=0.0515.$ 
 
 A 90\% C.I. can be $(0.4128 \pm 1.64\cdot \sqrt{0.0515} )=(0.4128 \pm 0.3722)$.
 
@@ -240,8 +238,7 @@ A 90\% C.I. can be $(0.4128 \pm 1.64\cdot \sqrt{0.0515} )=(0.4128 \pm 0.3722)$.
 
 Takazaki: 
 
-$\hat{\mu}=0.1969$, 
-and $\widehat{Var(\hat{\mu})}=0.04239.$ 
+$\hat{\mu}=0.1969$, and $\widehat{Var(\hat{\mu})}=0.04239.$ 
 
 A 90\% C.I. can be $(0.1969 \pm 1.64\cdot \sqrt{0.04239} )
 =(0, 0.5346)$.
@@ -250,8 +247,7 @@ A 90\% C.I. can be $(0.1969 \pm 1.64\cdot \sqrt{0.04239} )
 
 Valais: 
 
-$\hat{\mu}=0.60204$, 
-and $\widehat{Var(\hat{\mu})}=0.03545.$ 
+$\hat{\mu}=0.60204$, and $\widehat{Var(\hat{\mu})}=0.03545.$ 
 
 A 90\% C.I. can be $(0.60204 \pm 1.64\cdot \sqrt{0.03545} )
 =(0.60204 \pm 0.3088)$.
@@ -264,13 +260,13 @@ A 90\% C.I. can be $(0.60204 \pm 1.64\cdot \sqrt{0.03545} )
             \hline
                  & $T$ index point estimate 	& Total Population	  \\ 
             \hline
-            Hofn 	& 0.4434		& 2143	 \\ 
+            Hofn 	 & 0.4434		& 2143	 \\ 
             \hline 
-            Talu & 0.2965 		& 1077	 \\ 
+            Talu     & 0.2965 		& 1077	 \\ 
             \hline 
-            Nelson & 0.4128 		& 551	 \\ 
+            Nelson   & 0.4128 		& 551	 \\ 
             \hline 
-            Valais & 0.6020 		& 530	 \\ 
+            Valais   & 0.6020 		& 530	 \\ 
             \hline 
             Takazaki & 0.1969 		& 357	 \\ 
             \hline
@@ -286,7 +282,14 @@ have serious wealth inequality problem,
 while Takazaki and Talu are likely to be good in this regard.
 
 \subsection{Difficulties and Problems}
-
+An obvious problem is the variance is too large, 
+though the $T$ index is not a normalized value (i.e., between 0 to 1).
+This can be reduced by reducing $N$, the number of first-layer clusters. 
+On the other hand, as we do not have the exact value 
+of the average wealth of a town $\bar{w}$, 
+we are using the sample average instead,
+which may introduce bias. 
+And the same reason goes for the corrected population of a town $M$.
 
 
 \end{document}
